@@ -1,16 +1,19 @@
 # 📡 Telco Customer Churn Prediction
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success) ![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Project Status](https://img.shields.io/badge/Status-Completed-success) ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Libraries](https://img.shields.io/badge/Library-Pandas%20|%20Seaborn-red)
 
 ## 📊 Project Overview
-In the competitive telecom sector, retaining customers is critical. This project analyzes **7,043 real customer records** to predict churn risks.
-* **Goal:** Identify factors that drive customer attrition and recommend retention strategies.
+In the competitive telecom sector, acquiring a new customer is 5x more expensive than retaining an existing one. This project analyzes **7,043 real customer records** to identify exactly why customers are leaving.
+
+* **Goal:** Predict churn behavior and calculate the financial impact of customer attrition.
 * **Data Source:** [Telco Customer Churn Dataset (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) - *Data included in `data/` folder.*
 
 ## 🔍 Key Business Insights
-1.  **Contract Trap:** Customers on **Month-to-Month contracts** are **15x more likely to churn** than those on 2-year contracts.
-2.  **The "First Year" Danger Zone:** The majority of churn happens within the first 12 months (see Chart 2). If a customer stays past year 1, they are likely to remain loyal.
-3.  **Payment Friction:** "Electronic Check" users have the highest churn, indicating potential UX issues with that payment gateway.
+*Generated automatically by `churn_analysis.py`*
+
+1.  **Contract Trap:** Customers on **Month-to-Month contracts** have a **42.7% churn rate**, while those on Two-Year contracts have only a **2.8% churn rate**.
+2.  **Fiber Optic Issue:** There is a technical or pricing issue with Fiber Optic Internet, as these users churn **significantly more** than DSL users.
+3.  **Revenue Impact:** The analysis identifies exactly how much revenue is being lost annually due to churn, helping stakeholders prioritize retention budgets.
 
 ## 📉 Visual Analysis
 
@@ -26,15 +29,24 @@ In the competitive telecom sector, retaining customers is critical. This project
 *Electronic check users churn at a significantly higher rate than automatic payment users.*
 ![Payment Method](images/03_payment_method.png)
 
+### 4. Correlation Matrix (Advanced)
+*A heatmap showing how variables interact. Strong correlation seen between 'Monthly Charges' and 'Churn'.*
+![Correlation Matrix](images/04_correlation_matrix.png)
+
 ## 🛠 Technical Implementation
 * **Language:** Python 3.10
-* **Libraries:** `Pandas` (Data Manipulation), `Seaborn` (Advanced Visualization).
-* **File Structure:**
-    * `data/`: Raw CSV dataset.
-    * `images/`: Generated charts for reporting.
-    * `churn_analysis.py`: Main script to run the analysis.
+* **Analysis:** `Pandas` for data cleaning and aggregation.
+* **Visualization:** `Seaborn` for statistical graphics and heatmaps.
+* **Automated Reporting:** The script calculates and prints exact financial loss numbers to the console.
 
-## 🚀 How to Run
-1. Clone the repository.
-2. Install dependencies: `pip install pandas matplotlib seaborn`
-3. Run the script: `python churn_analysis.py`
+## 📂 Project Structure
+```text
+├── data/
+│   └── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Raw Dataset
+├── images/                                   # Generated Charts
+│   ├── 01_contract_risk.png
+│   ├── 02_tenure_distribution.png
+│   ├── 03_payment_method.png
+│   └── 04_correlation_matrix.png
+├── churn_analysis.py                         # Main Python Script
+└── README.md                                 # Project Report
