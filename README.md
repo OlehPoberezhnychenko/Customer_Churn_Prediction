@@ -29,9 +29,6 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 *Electronic check users churn at a significantly higher rate than automatic payment users.*
 ![Payment Method](images/03_payment_method.png)
 
-### 4. Correlation Matrix (Advanced)
-*A heatmap showing how variables interact. Strong correlation seen between 'Monthly Charges' and 'Churn'.*
-![Correlation Matrix](images/04_correlation_matrix.png)
 
 ## 🛠 Technical Implementation
 * **Language:** Python 3.10
@@ -50,3 +47,8 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 │   └── 04_correlation_matrix.png
 ├── churn_analysis.py                         # Main Python Script
 └── README.md                                 # Project Report
+
+## 🚀 How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install pandas matplotlib seaborn`
+3. Run the script: `python churn_analysis.py`
