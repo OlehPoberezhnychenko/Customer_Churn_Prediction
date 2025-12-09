@@ -1,4 +1,4 @@
-# 📡 Telco Customer Churn Prediction 
+# 📡 Telco Customer Churn Prediction
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success) ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 
@@ -9,24 +9,30 @@ In the competitive telecom sector, retaining customers is critical. This project
 
 ## 🔍 Key Business Insights
 1.  **Contract Trap:** Customers on **Month-to-Month contracts** are **15x more likely to churn** than those on 2-year contracts.
-2.  **Senior Citizens:** Despite lower usage, senior citizens have a higher churn rate, suggesting a need for simplified support services.
+2.  **The "First Year" Danger Zone:** The majority of churn happens within the first 12 months (see Chart 2). If a customer stays past year 1, they are likely to remain loyal.
 3.  **Payment Friction:** "Electronic Check" users have the highest churn, indicating potential UX issues with that payment gateway.
 
 ## 📉 Visual Analysis
 
-### Contract Type vs. Churn Risk
+### 1. Contract Type Risk
 *Month-to-month contracts are the single biggest predictor of churn.*
+![Contract Risk](images/01_contract_risk.png)
 
-![Churn by Contract](images/contract_risk_analysis.png)
-*(Note: If the image doesn't load, ensure the folder name is 'images' and file is 'contract_risk_analysis.png')*
+### 2. Tenure Distribution (When do they leave?)
+*Red area shows churned customers leaving early (0-12 months). Green area shows loyal customers.*
+![Tenure Distribution](images/02_tenure_distribution.png)
+
+### 3. Payment Method Impact
+*Electronic check users churn at a significantly higher rate than automatic payment users.*
+![Payment Method](images/03_payment_method.png)
 
 ## 🛠 Technical Implementation
 * **Language:** Python 3.10
-* **Libraries:** `Pandas` (Data Manipulation), `Matplotlib/Seaborn` (Visualization).
+* **Libraries:** `Pandas` (Data Manipulation), `Seaborn` (Advanced Visualization).
 * **File Structure:**
     * `data/`: Raw CSV dataset.
-    * `notebooks/`: Jupyter notebooks for exploratory analysis.
     * `images/`: Generated charts for reporting.
+    * `churn_analysis.py`: Main script to run the analysis.
 
 ## 🚀 How to Run
 1. Clone the repository.
