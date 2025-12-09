@@ -36,6 +36,11 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 * **Visualization:** `Seaborn` for statistical graphics and heatmaps.
 * **Automated Reporting:** The script calculates and prints exact financial loss numbers to the console.
 
+* ## 🚀 How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install pandas matplotlib seaborn`
+3. Run the script: `python churn_analysis.py`
+
 ## 📂 Project Structure
 ```text
 ├── data/
@@ -48,7 +53,4 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 ├── churn_analysis.py                         # Main Python Script
 └── README.md                                 # Project Report
 
-## 🚀 How to Run
-1. Clone the repository.
-2. Install dependencies: `pip install pandas matplotlib seaborn`
-3. Run the script: `python churn_analysis.py`
+
