@@ -1,6 +1,6 @@
 # 📡 Telco Customer Churn Prediction
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success) ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Libraries](https://img.shields.io/badge/Library-Pandas%20|%20Seaborn-red)
+![Project Status](https://img.shields.io/badge/Status-Completed-success) ![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Libraries](https://img.shields.io/badge/Library-Pandas%20|%20Seaborn%20|%20ScikitLearn-red)
 
 ## 📊 Project Overview
 In the competitive telecom sector, acquiring a new customer is 5x more expensive than retaining an existing one. This project analyzes **7,043 real customer records** to identify exactly why customers are leaving.
@@ -29,6 +29,9 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 *Electronic check users churn at a significantly higher rate than automatic payment users.*
 ![Payment Method](images/03_payment_method.png)
 
+### 4. Correlation Matrix
+*A heatmap showing how variables interact. Strong correlation seen between 'Monthly Charges' and 'Churn'.*
+![Correlation Matrix](images/04_correlation_matrix.png)
 
 ### 5. Predictive Modeling (Logistic Regression)
 *We trained a Machine Learning model to predict churn with ~80% accuracy. The Confusion Matrix below shows the model's performance on test data.*
@@ -39,14 +42,14 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 * **Precision:** High precision for "No Churn" predictions.
 * **Key Drivers:** Contract Type (Month-to-Month), Tenure, and Internet Service (Fiber Optic).
 
-
 ## 🛠 Technical Implementation
 * **Language:** Python 3.10
 * **Analysis:** `Pandas` for data cleaning and aggregation.
 * **Visualization:** `Seaborn` for statistical graphics and heatmaps.
-* **Automated Reporting:** The script calculates and prints exact financial loss numbers to the console.
+* **Machine Learning:** `Scikit-Learn` (Logistic Regression) for predictive modeling.
 
-* ## 🚀 How to Run
+## 🚀 How to Run
 1. Clone the repository.
-2. Install dependencies: `pip install pandas matplotlib seaborn`
-3. Run the script: `python churn_analysis.py`
+2. Install dependencies:
+   ```bash
+   pip install pandas matplotlib seaborn scikit-learn
