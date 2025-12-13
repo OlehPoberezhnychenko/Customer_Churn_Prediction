@@ -30,6 +30,16 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 ![Payment Method](images/03_payment_method.png)
 
 
+### 5. Predictive Modeling (Logistic Regression)
+*We trained a Machine Learning model to predict churn with ~80% accuracy. The Confusion Matrix below shows the model's performance on test data.*
+![Confusion Matrix](images/05_confusion_matrix.png)
+
+**Model Metrics:**
+* **Accuracy:** ~80% (Baseline)
+* **Precision:** High precision for "No Churn" predictions.
+* **Key Drivers:** Contract Type (Month-to-Month), Tenure, and Internet Service (Fiber Optic).
+
+
 ## 🛠 Technical Implementation
 * **Language:** Python 3.10
 * **Analysis:** `Pandas` for data cleaning and aggregation.
@@ -40,13 +50,3 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 1. Clone the repository.
 2. Install dependencies: `pip install pandas matplotlib seaborn`
 3. Run the script: `python churn_analysis.py`
-
-
-### 5. Predictive Modeling (Logistic Regression)
-*We trained a Machine Learning model to predict churn with ~80% accuracy. The Confusion Matrix below shows the model's performance on test data.*
-![Confusion Matrix](images/05_confusion_matrix.png)
-
-**Model Metrics:**
-* **Accuracy:** ~80% (Baseline)
-* **Precision:** High precision for "No Churn" predictions.
-* **Key Drivers:** Contract Type (Month-to-Month), Tenure, and Internet Service (Fiber Optic).
