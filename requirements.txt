@@ -1,4 +1,5 @@
-pandas>=1.5.0
-matplotlib>=3.5.0
-seaborn>=0.11.0
-plotly>=5.0.0
+pandas
+matplotlib
+seaborn
+scikit-learn
+numpy
