@@ -41,16 +41,12 @@ In the competitive telecom sector, acquiring a new customer is 5x more expensive
 2. Install dependencies: `pip install pandas matplotlib seaborn`
 3. Run the script: `python churn_analysis.py`
 
-## 📂 Project Structure
-```text
-├── data/
-│   └── WA_Fn-UseC_-Telco-Customer-Churn.csv  # Raw Dataset
-├── images/                                   # Generated Charts
-│   ├── 01_contract_risk.png
-│   ├── 02_tenure_distribution.png
-│   ├── 03_payment_method.png
-│   └── 04_correlation_matrix.png
-├── churn_analysis.py                         # Main Python Script
-└── README.md                                 # Project Report
 
+### 5. Predictive Modeling (Logistic Regression)
+*We trained a Machine Learning model to predict churn with ~80% accuracy. The Confusion Matrix below shows the model's performance on test data.*
+![Confusion Matrix](images/05_confusion_matrix.png)
 
+**Model Metrics:**
+* **Accuracy:** ~80% (Baseline)
+* **Precision:** High precision for "No Churn" predictions.
+* **Key Drivers:** Contract Type (Month-to-Month), Tenure, and Internet Service (Fiber Optic).
